@@ -1,0 +1,106 @@
+/* HEADER STYLES */
+
+.header-container {
+  border: rgb(167, 142, 1) solid 0.1em;
+  background-color: rgb(22, 22, 35);
+
+  height: 5vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1em;
+}
+
+.header-item:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+
+.header-subitem {
+  color: rgb(167, 142, 1);
+}
+
+#arcane-logo {
+  height: 5vh;
+}
+
+#side-menu-opener-icon,
+#home-button {
+  color: rgb(167, 142, 1);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+  .header-item:has(.header-subitem){
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .header-item:has(.header-subitem){
+    display: none;
+  }
+
+  .header-item:has(#arcane-logo){
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  .header-item:has(#side-menu-opener-icon) {
+    display: none;
+  }
+
+  .header-item:has(.header-subitem){
+    display: block;
+  }
+
+  .header-item:has(#arcane-logo){
+    display: block;
+  }
+}
+
+/* OPEN MENU SYLES */
+
+#side-menu {
+  border: rgb(167, 142, 1) solid 0.1em;
+  background-color: rgb(22, 22, 35);
+  color: rgb(167, 142, 1);
+
+  height: 20vh;
+  width: 30vw;
+
+  top: 9vh;
+  left: -31vw;
+
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: left 1s;
+}
+
+#side-menu.side-menu-opened {
+  left: 0;
+  top: 9vh;
+
+  transition: left 1s;
+}
+
+.side-menu-item:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
