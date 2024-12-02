@@ -75,6 +75,7 @@
 
 span {
   color: red;
+  visibility: hidden;
 }
 
 /* MEDIA QUERIES */
