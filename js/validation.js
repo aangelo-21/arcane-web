@@ -28,7 +28,14 @@ function validateFanZoneForm(e) {
 
   if (!valid) {
     e.preventDefault();
+  } else {
+    saveData(NAME, SUBJECT, MESSAGE);
   }
 }
 
+function saveData(NAME, SUBJECT, MESSAGE) {
+  localStorage.setItem("name", NAME);
+  localStorage.setItem("subject", SUBJECT);
+  localStorage.setItem("message", MESSAGE);
+}
 listenForValidation();
