@@ -1,16 +1,22 @@
 /* HEADER STYLES */
 
 header{
+  position: fixed;
+  top: 0;
+  left: 0;
+
   display: flex;
   justify-content: center;
+
+  width: 100%;
 }
 
 .header-container {
-  border-radius: 0.5em;
-  background-color: rgb(167, 142, 1) ;
+  background-color: #2B2D42 ;
+  border-bottom: solid #B48C39 0.05em;
 
   height: 5vh;
-  width: 95vw;
+  width: 100%;
 
   display: flex;
   flex-direction: row;
@@ -18,7 +24,6 @@ header{
   align-items: center;
 
   padding: 1em;
-  margin: 1em;
 }
 
 .header-item:hover {
@@ -27,7 +32,7 @@ header{
 }
 
 .header-subitem {
-  color: rgb(22, 22, 35);
+  color: #B48C39;
 }
 
 #arcane-logo {
@@ -36,7 +41,7 @@ header{
 
 #side-menu-opener-icon,
 #home-button {
-  color: rgb(22, 22, 35);
+  color: #B48C39;
 }
 
 /* MEDIA QUERIES */
@@ -80,9 +85,9 @@ header{
 /* OPEN MENU SYLES */
 
 #side-menu {
-  border-radius: 0.5em;
-  background-color: rgb(167, 142, 1) ;
-  color: rgb(22, 22, 35);
+  border: solid #B48C39 0.05em;
+  background-color: #2B2D42 ;
+  color: #B48C39;
 
   height: 20vh;
   width: 30vw;
