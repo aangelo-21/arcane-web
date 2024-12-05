@@ -1,4 +1,4 @@
-let comments = [
+let comments = JSON.parse(localStorage.getItem("comments")) || [
   {
     name: "FanDeVi",
     subject: "Desarrollo de personajes increíble",
@@ -21,9 +21,11 @@ let comments = [
   }
 ];
 
-
-
 let currentEditIndex = null;
+
+function saveCommentsToLocalStorage() {
+  localStorage.setItem("comments", JSON.stringify(comments));
+}
 
 function showCommentsList() {
   const COMMENTS_LIST = document.getElementById("comments");
@@ -47,7 +49,7 @@ function showCommentsList() {
 function introduceNewComment(e) {
   e.preventDefault();
 
-  const NAME = localStorage.getItem("name");
+  const NAME = localStorage.getItem("name") || "Anónimo";
   const SUBJECT = document.getElementById("form-subject").value;
   const MESSAGE = document.getElementById("form-message").value;
 
@@ -66,17 +68,18 @@ function introduceNewComment(e) {
     currentEditIndex = null;
   }
 
+  saveCommentsToLocalStorage();
+
   document.getElementById("fan-zone-form").reset();
-  document.getElementById("submit-button").innerText = "Enviar"; 
+  document.getElementById("submit-button").innerText = "Enviar";
 
   showCommentsList();
 }
 
 function editComment(index) {
   const comment = comments[index];
-  currentEditIndex = index; 
+  currentEditIndex = index;
 
-  localStorage.getItem("name");
   document.getElementById("form-subject").value = comment.subject;
   document.getElementById("form-message").value = comment.message;
 
@@ -85,6 +88,7 @@ function editComment(index) {
 
 function deleteComment(index) {
   comments.splice(index, 1);
+  saveCommentsToLocalStorage();
   showCommentsList();
 }
 
