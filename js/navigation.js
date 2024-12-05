@@ -1,6 +1,6 @@
 function listenToNavigate() {
   const HOME_BUTTON = document.getElementById("home-button");
-  HOME_BUTTON.addEventListener("click", navigateToHeader);
+  HOME_BUTTON.addEventListener("click", navigateToHome);
   const CHARACTERS = document.getElementById("characters");
   CHARACTERS.addEventListener("click", navigateToCharacters);
   const LOCATIONS = document.getElementById("locations");
@@ -15,8 +15,8 @@ function listenToNavigate() {
   SIDE_MENU_FAN_ZONE.addEventListener("click", navigateToFanZone);
 }
 
-function navigateToHeader() {
-  window.location.href = "index.html";
+function navigateToHome() {
+  window.location.href = "home.html";
 }
 
 function navigateToCharacters() {

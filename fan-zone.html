@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Log-In</title>
+  <title>Fan Zone</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/fan-zone.css">
   <link rel="stylesheet" href="css/footer.css">
 </head>
 
@@ -45,23 +45,18 @@
   </header>
 
   <div class="container">
-    <div class="item" id="log-in">
-      <form action="home.html" id="log-in-form">
+    <div class="item" id="comments"></div>
+    <div class="item" id="form">
+      <form id="fan-zone-form">
         <div class="form-item">
-          <label for="form-name">Nombre:</label>
-          <input type="text" name="name" id="form-name" placeholder="Introduce tu nombre">
-          <span id="span-name">* este campo es obligatorio</span>
+          <label for="form-subject">Asunto:</label>
+          <input type="text" name="subject" id="form-subject" placeholder="Introduce un asunto">
+          <span id="span-subject">* este campo es obligatorio</span>
         </div>
         <div class="form-item">
-          <label for="form-password">Contraseña:</label>
-          <input type="password" name="password" id="form-password" placeholder="Introduce una contraseña">
-          <span id="span-password">* este campo es obligatorio</span>
-        </div>
-        <div class="form-item">
-          <label for="form-password-confirmation">Confirma tu contraseña:</label>
-          <input type="password" name="password-confirmation" id="form-password-confirmation" placeholder="Introduce la contraseña de nuevo">
-          <span id="span-password-confirmation">* este campo es obligatorio</span>
-          <span id="span-password-confirmation-dont-match">* las contraseñas no coinciden</span>
+          <label for="form-message">Mensaje:</label>
+          <input type="text" name="message" id="form-message" placeholder="Introduce un mensaje">
+          <span id="span-message">* este campo es obligatorio</span>
         </div>
         <button type="submit" class="form-item" id="submit-button">Enviar</button>
       </form>
@@ -91,7 +86,8 @@
   <script src="https://kit.fontawesome.com/dc37a738ae.js" crossorigin="anonymous"></script>
   <script src="js/open-side-menu.js"></script>
   <script src="js/navigation.js"></script>
-  <script src="js/validate-log-in-form.js"></script>
+  <script src="js/validate-fan-zone-form.js"></script>
+  <script src="js/show-data.js"></script>
 
 </body>
 
