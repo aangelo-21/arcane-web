@@ -12,8 +12,7 @@ header{
 }
 
 .header-container {
-  background-color: #2B2D42 ;
-  border-bottom: solid #B48C39 0.05em;
+  background-color: rgb(10, 10, 10);
 
   height: 5vh;
   width: 100%;
@@ -32,7 +31,7 @@ header{
 }
 
 .header-subitem {
-  color: #B48C39;
+  color: rgb(245, 245, 245);
 }
 
 #arcane-logo {
@@ -41,7 +40,7 @@ header{
 
 #side-menu-opener-icon,
 #home-button {
-  color: #B48C39;
+  color: rgb(245, 245, 245);
 }
 
 /* MEDIA QUERIES */
@@ -85,9 +84,9 @@ header{
 /* OPEN MENU SYLES */
 
 #side-menu {
-  border: solid #B48C39 0.05em;
-  background-color: #2B2D42 ;
-  color: #B48C39;
+  border: solid rgb(245, 245, 245) 0.05em;
+  background-color: rgb(10, 10, 10) ;
+  color: rgb(245, 245, 245);
 
   height: 20vh;
   width: 30vw;

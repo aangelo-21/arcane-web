@@ -6,10 +6,13 @@ body {
   margin: 0;
   padding: 0;
 
-  background-color: #2B2D42;
-  color: #B48C39;
+  background: linear-gradient(to bottom, #0e1029, #10192b);
+  color: rgb(245, 245, 245);
 
   font-family: "Beaufort for LOL Bold";
+  
+  height: 100vh;
+  margin: 0;
 }
 
 /* MEDIA QUERIES */

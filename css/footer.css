@@ -13,7 +13,7 @@ footer {
 
 .footer-container {
   background-color: rgb(10, 10, 10);
-  color: rgb(255, 255, 255);
+  color: rgb(245, 245, 245);
 
   height: 10vh;
   width: 100%;
@@ -34,7 +34,7 @@ footer {
 }
 
 .footer-subitem {
-  color: rgb(255, 255, 255);
+  color: rgb(245, 245, 245);
 }
 
 .social-media-icon{
