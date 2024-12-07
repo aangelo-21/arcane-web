@@ -1,0 +1,80 @@
+/* LOCATIONS locationS STYLES */
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  max-width: 90%;
+  background-color: white;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  margin: 1em;
+  transition: scale 1s;
+}
+
+.item:hover {
+  scale: 1.02;
+  transition: scale 1s;
+}
+
+.location-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+.location-name {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgb(10, 10, 10);
+}
+
+.location-description {
+  font-size: 0.9em;
+  color: rgb(10, 10, 10);
+  text-align: justify;
+
+  padding: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+  .item{
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+  .item{
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  .item{
+    width: 30%;
+  }
+}
