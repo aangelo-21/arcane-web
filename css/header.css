@@ -1,6 +1,6 @@
 /* HEADER STYLES */
 
-header{
+header {
   display: flex;
   justify-content: center;
 
@@ -21,9 +21,14 @@ header{
   padding: 1em;
 }
 
+.header-item {
+  transition: scale 1s;
+}
+
 .header-item:hover {
   scale: 1.2;
   cursor: pointer;
+  transition: scale 1s;
 }
 
 .header-subitem {
@@ -42,17 +47,17 @@ header{
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 600px) {
-  .header-item:has(.header-subitem){
+  .header-item:has(.header-subitem) {
     display: none;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .header-item:has(.header-subitem){
+  .header-item:has(.header-subitem) {
     display: none;
   }
 
-  .header-item:has(#arcane-logo){
+  .header-item:has(#arcane-logo) {
     display: block;
   }
 }
@@ -68,11 +73,11 @@ header{
     display: none;
   }
 
-  .header-item:has(.header-subitem){
+  .header-item:has(.header-subitem) {
     display: block;
   }
 
-  .header-item:has(#arcane-logo){
+  .header-item:has(#arcane-logo) {
     display: block;
   }
 }
@@ -81,7 +86,7 @@ header{
 
 #side-menu {
   border: solid rgb(245, 245, 245) 0.05em;
-  background-color: rgb(10, 10, 10) ;
+  background-color: rgb(10, 10, 10);
   color: rgb(245, 245, 245);
 
   height: 20vh;
@@ -98,6 +103,7 @@ header{
   align-items: center;
 
   transition: left 1s;
+  z-index: 9999;
 }
 
 #side-menu.side-menu-opened {
@@ -107,7 +113,12 @@ header{
   transition: left 1s;
 }
 
+.side-menu-item {
+  transition: scale 1s;
+}
+
 .side-menu-item:hover {
   scale: 1.2;
   cursor: pointer;
+  transition: scale 1s;
 }

@@ -12,7 +12,6 @@
   justify-content: flex-start;
   align-items: center;
 
-  width: 40%;
   max-width: 90%;
   background-color: white;
   border: 0.1rem solid #ccc;
@@ -21,6 +20,12 @@
   overflow: hidden;
 
   margin: 1em;
+  transition: scale 1s;
+}
+
+.item:hover {
+  scale: 1.02;
+  transition: scale 1s;
 }
 
 .character-img {
@@ -39,8 +44,37 @@
 }
 
 .character-description {
-  width: 100%;
   font-size: 0.9em;
   color: rgb(10, 10, 10);
   text-align: justify;
+
+  padding: 1em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+  .item{
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+  .item{
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+  .item{
+    width: 30%;
+  }
 }
