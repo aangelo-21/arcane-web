@@ -20,7 +20,13 @@
   overflow: hidden;
 
   margin: 1em;
-  transition: scale 1s;
+
+  opacity: 0;
+  transition: opacity 2s ease, scale 1s ease;
+}
+
+.item.visible {
+  opacity: 1;
 }
 
 .item:hover {
