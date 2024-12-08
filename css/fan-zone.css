@@ -96,6 +96,36 @@ span {
   visibility: hidden;
 }
 
+/* PARALLAX EFFECT */
+
+.banner-image {
+  background-image: url('../img/parallax-effect-images/jinx-2.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.banner-image h1,
+h2 {
+  text-align: center;
+  color: var(--white);
+}
+
+.banner-image h1 {
+  font-size: 5em;
+}
+
+.banner-image h2 {
+  font-size: 3em;
+}
+
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 600px) {
