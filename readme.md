@@ -6,7 +6,7 @@ Arcane Web is a dynamic web project inspired by the rich visuals and themes of t
 
 ## Getting Started
 
-You can either clone this repository and open the index.html inside the public folder. Or you can directly follow the following link 
+You can either clone this repository and open the index.html inside the public folder. Or you can directly follow the following link https://arcane-web.web.app
 
 ## Inspiration
 
