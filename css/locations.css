@@ -95,6 +95,14 @@ h2 {
   .item{
     width: 90%;
   }
+
+  .banner-image h1 {
+    font-size: 3em;
+  }
+
+  .banner-image h2 {
+    font-size: 2em;
+  }
 }
 
 @media only screen and (min-width: 600px) {
